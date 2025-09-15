@@ -6,6 +6,7 @@ import { HeroSection } from "@/sections/Hero";
 import { ProjectsSection } from "@/sections/Projects";
 import { TapeSection } from "@/sections/Tape";
 import { BlogsSection } from "@/sections/BlogsSection";
+import { TestimonialsSection } from "@/sections/TestimonialsSection";
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
       <HeroSection />
       <ProjectsSection  />
       <TapeSection  />
-      <BlogsSection  />
+      {/* <BlogsSection  /> */}
+      <TestimonialsSection/>
       <AboutSection />
       <ContactSection />
       <Footer />

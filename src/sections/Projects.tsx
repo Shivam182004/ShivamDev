@@ -8,6 +8,7 @@ import Card from "@/components/Card";
 import soulScriptProjectImg from "@/assets/images/istproject.png"
 import typingCastProjectImg from "@/assets/images/tyingCastProject.png"
 import blogzyyProjectImg from "@/assets/images/blogzyyProject.png"
+import adSquareProject from "@/assets/images/adSquareProject.png"
 
 const portfolioProjects = [
   {
@@ -35,17 +36,17 @@ const portfolioProjects = [
     image: typingCastProjectImg,
   },
   {
-    company: "Blogzyy",
-    year: "2024",
-    title: "Full-Stack Blog Application",
-    results: [
-      { title: "Implemented user authentication for secure access" },
-      { title: "Developed CRUD operations for efficient post management" },
-      { title: "Added a comment system for better user engagement" },
-    ],
-    link: "https://blogzyy.onrender.com/",
-    image: blogzyyProjectImg,
-  },
+  company: "AdSquare",
+  year: "2025",
+  title: "Full-Stack Digital Billboard Booking System",
+  results: [
+    { title: "Implemented secure user authentication for advertisers" },
+    { title: "Developed booking and scheduling with full CRUD operations" },
+    { title: "Integrated WebSocket for real-time ad streaming" },
+  ],
+  link: "https://adsquare.onrender.com/",
+  image: adSquareProject,
+},
 ];
 
 export const ProjectsSection = () => {
