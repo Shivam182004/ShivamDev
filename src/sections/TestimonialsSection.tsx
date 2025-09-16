@@ -11,7 +11,6 @@ import colleague3 from "@/assets/images/memoji-avatar-3.png";
 import colleague4 from "@/assets/images/memoji-avatar-5.png";
 
 
-
 const testimonials = [
   {
     name: "Sagar Chouhan",
