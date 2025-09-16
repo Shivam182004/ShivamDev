@@ -15,8 +15,21 @@ type SkillPillProps = {
   index: number;
 };
 
+type SkillCategory = {
+  id: string;
+  title: string;
+  description: string;
+  skills: string[];
+};
 
-const skillCategories = [
+
+type SkillCategoryProps = {
+  category: SkillCategory;
+  isActive: boolean;
+  onClick: (id: string) => void;
+};
+
+const skillCategories: SkillCategory[] = [
   {
     id: "frontend",
     title: "Frontend Development",
@@ -100,7 +113,7 @@ const SkillPill = ({ skill, index }:SkillPillProps) => {
   );
 };
 
-const SkillCategory = ({ category, isActive, onClick }) => {
+const SkillCategory = ({ category, isActive, onClick }:SkillCategoryProps) => {
   return (
     <motion.div 
       className={`p-5 rounded-xl cursor-pointer transition-all duration-300 border ${
@@ -108,7 +121,7 @@ const SkillCategory = ({ category, isActive, onClick }) => {
           ? 'bg-gradient-to-br from-gray-800 to-gray-900 border-emerald-500/30 shadow-lg' 
           : 'bg-gray-800/50 border-gray-700 hover:border-emerald-400/30'
       }`}
-      onClick={onClick}
+      onClick={() => onClick(category.id)} 
       whileHover={{ y: -3 }}
       whileTap={{ scale: 0.98 }}
     >
@@ -165,7 +178,7 @@ export const AboutSection = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
             >
-              {currentCategory.skills.map((skill, index) => (
+              {currentCategory?.skills.map((skill, index) => (
                 <SkillPill key={skill} skill={skill} index={index} />
               ))}
             </motion.div>
