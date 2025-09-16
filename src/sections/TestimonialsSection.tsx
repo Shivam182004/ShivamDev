@@ -81,7 +81,7 @@ export const TestimonialsSection = () => {
                         <div className="text-sm text-blue-300/80">{testimonial.position}</div>
                       </div>
                     </div>
-                    <p className="mt-4 md:mt-6 text-sm md:text-base text-white/80 italic">"{testimonial.text}"</p>
+                    <p className="mt-4 md:mt-6 text-sm md:text-base text-white/80 italic"> &quot;{testimonial.text}&quot;</p>
                     
                     <a
                       href={testimonial.link}
