@@ -142,7 +142,7 @@ export const AboutSection = () => {
   const currentCategory = skillCategories.find(cat => cat.id === activeCategory);
 
   return (
-    <div id="about" className="py-20 lg:py-28">
+    <div id="About" className="py-20 lg:py-28">
       <div className="container">
         <SectionHeader 
           eyebrow="Skills & Expertise" 
